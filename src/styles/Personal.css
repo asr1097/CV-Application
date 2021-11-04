@@ -1,0 +1,62 @@
+.personalDivWrapper {
+    width: 200px;
+    min-height: 97vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(221, 221, 221);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.personalDiv {
+    width: 90%;
+    height: 600px;
+    margin-top: 7%;
+    background-color: rgb(221, 221, 221)
+}
+
+.mainLabelDiv {
+    display: flex;
+    align-items: center;
+}
+
+.mainLabel {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #254117
+}
+
+.personalInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    margin-top: 35px;
+    height: 60%;
+    width: 85%;   
+}
+
+.personalInfo > * {
+    margin-bottom: 10px;
+}
+
+.yearsFormDiv {
+    display: flex;
+}
+
+.personalP {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.smLabel {
+    font-weight: bold;
+}
+
+.mainLabelDiv > button {
+    visibility: hidden;
+}
+
+.personalDiv:hover > .mainLabelDiv > button {
+    visibility: visible;
+}

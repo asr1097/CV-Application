@@ -1,0 +1,36 @@
+.experiencesDiv {
+    width: 90%;
+    margin-top: 4%;
+}
+
+.experienceDiv {
+    display: flex;
+}
+
+.buttonsDivExp {
+    position: absolute;
+    right: 5%;
+    margin-top: 15px;
+    display: flex;
+}
+
+.buttonsDivExp > * {
+    visibility: hidden;
+}
+
+.experienceDiv:hover > .buttonsDivExp > * {
+    visibility: visible;
+}
+
+.mainLabelDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainLabelDiv > button {
+    visibility: hidden;
+}
+
+.experiencesDiv:hover > .mainLabelDiv > button {
+    visibility: visible;
+}

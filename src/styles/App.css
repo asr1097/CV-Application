@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(189, 189, 189);
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.mainDiv {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%, 0);
+    border-radius: 5px;
+}
+
+.eduAndExpDiv {
+    background-color: white;
+    width: 95%;
+}
+
+.eduAndExpWrapper {
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.f {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+
+
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.formDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 600px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: gray;
+    height: 85%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.formLabel {
+    position: relative;
+    top: -9%;
+    opacity: 0.7;
+    transition: all 0.5s ease;
+}
+
+
+.fromInput, .toInput  {
+    text-align: center;
+}
+
+.fromLabel {
+    position: relative;
+    top: 5%;
+    opacity: 0.7;
+    right: 65%;
+    transition: all 0.4s ease;
+}
+
+.toLabel {
+    position: relative;
+    opacity: 0.7;
+    top: 5%;
+    right: 41%;
+    transition: all 0.4s ease;
+}
+
+input:focus  + .formLabel, input:valid + .formLabel {
+    font-size: 70%;
+    opacity: 1;
+    transform: translate(0%, -50%);
+}
+
+.fromInput:focus ~ .fromLabel, .fromInput:valid ~ .fromLabel {
+    font-size: 70%;
+    opacity: 1;
+    transform: translate(0%, -55%);
+}
+
+.toInput:focus ~ .toLabel, .toInput:valid ~ .toLabel {
+    font-size: 70%;
+    opacity: 1;
+    transform: translate(0%, -55%);
+}
+
+input {
+    width: 85%;
+    height: 30px;
+    padding-top: 10px;
+}
+
+.yearInput {
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.yearsDiv {
+    width: 70px;
+}
+
+.yearsDiv > p {
+    font-weight: bolder;
+    color: #321640
+}
+
+.submitBtn {
+    height: 40px;
+    width: 70px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    background-color: #007bff;
+    transition: transform 0.4s ease;
+}
+
+.cancelBtn {
+    height: 40px;
+    width: 70px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #dc3545;
+    border-radius: 3px;
+    background-color: #dc3545;
+    transition: transform 0.4s ease;
+}
+
+.cancelBtn:hover, .submitBtn:hover {
+    transform: scale(1.1);
+}
+
+.formBtns {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+hr {
+    height: 1px;
+    background-color: black;
+    border: 0px;
+}
+
+.mainHr {
+    height: 2px;
+    background-color: black;
+    border: 0px;
+}
+
+.eduAndExpWrapper {
+    width: 500px;
+    min-height: 97vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.eduAndExpDiv {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.yearsFormDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+

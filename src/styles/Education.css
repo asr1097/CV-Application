@@ -1,0 +1,58 @@
+.educationsDiv {
+    width: 90%;
+}
+
+.educationDivWrapper{
+    width: 500px;
+}
+
+
+
+.educationDiv {
+    display: flex;
+}
+
+.yearsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start
+}
+
+.infoDiv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.schoolName {
+    font-weight: bold;
+}
+
+.buttonsDivEdu {
+    position: absolute;
+    right: 5%;
+    margin-top: 15px;
+    display: flex;
+}
+
+.buttonsDivEdu > * {
+    visibility: hidden;
+}
+
+.educationDiv:hover > .buttonsDivEdu > * {
+    visibility: visible;
+}
+
+.mainLabelDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainLabelDiv > button {
+    visibility: hidden;
+}
+
+.educationsDiv:hover > .mainLabelDiv > button {
+    visibility: visible;
+}
